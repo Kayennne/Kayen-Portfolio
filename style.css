@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #FFD5D5;
+}
+
+/* ===== Nav-Bar - Start ===== */
+
+nav{
+    background-color: black;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover{
+    color: #DB8D8D;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+nav li:first-child a{
+    color: white;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #FFC6C6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: right 0.3s ease-in-out;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar li a{
+    width: 100%;
+}
+
+.sidebar li a i{
+    padding-right: 10px;
+}
+
+nav ul .nav-top{
+    display: flex;
+    width: 100%;
+}
+
+nav ul .nav-top .x-button a{
+    justify-content: end;
+}
+
+
+.menu-button{
+    display: none;
+}
+
+/* ===== Nav-Bar - End ===== */
+
+
+/* ===== Introduction - Start ===== */
+
+
+
+/* ===== Introduction - End ===== */
+
+@media (max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .nav-bar {
+    width: 100%;
+    display: flex;
+    Justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: pink;
+    padding: 12px 20px;
+}
+
+.logo img {
+
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.menu li a:hover {
+    color: black;
+}
+
+.open-menu, .close-menu {
+    position: absolute;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check{
+    display: none;
+}
+
+
+
+
+
+
+===== RESPONSIVENESS =====
+
+@media (max-width: 610px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: brown;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}  */
