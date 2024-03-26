@@ -12,7 +12,7 @@ body{
 /* ===== Nav-Bar - Start ===== */
 
 nav{
-    background-color: black;
+    background-color: #FFD5D5;
 }
 
 nav ul{
@@ -24,16 +24,19 @@ nav ul{
 }
 
 nav li{
-    height: 50px;
+    height: auto;
 }
 
 nav a{
+    font-family: 'Rage Italic', sans-serif;
+    font-size: 35px;
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
     display: flex;
     align-items: center;
     color: white;
+    margin: 20px 0px;
 }
 
 nav a:hover{
@@ -94,11 +97,305 @@ nav ul .nav-top .x-button a{
 
 /* ===== Introduction - Start ===== */
 
+@keyframes slideInUp {
+    from {
+        transform: translateY(300px);
+    }
 
+    to {
+        transform: translateY(0);
+    }
+}
+
+.introduction{
+    display: flex;
+    padding: 30px 0px;
+}
+
+.intro-image{
+    width: 25%;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.intro-image img{
+    animation-name: slideInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra spacing */
+}
+
+.introduction .hello{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 50%;
+    padding-bottom: 10px;
+}
+
+.introduction .hello h1{
+    font-size: 200px;
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.introduction .hello h3{
+    font-size: 90px;
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.introduction .hello h4{
+    font-size: 60px;
+    padding-top: 10px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.introduction .hello h5{
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.introduction .hello p{
+    padding-top: 30px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.introduction .hello p a{
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: #DB8D8D;
+    color: white;
+    border-radius: 30px;
+    font-size: 2vw;
+}
 
 /* ===== Introduction - End ===== */
 
-@media (max-width: 800px){
+
+/* ===== About Me - Start ===== */
+
+.about-me{
+    background-color: white;
+    /* position: relative;
+    z-index: 1;
+    margin-top: -100px; */
+    display: flex;
+    padding: 30px 0px;
+}
+
+.about-me .text{
+    max-width: 60%;
+    margin: auto;
+}
+
+.about-me h1{
+    font-size: 130px;
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(54, 54, 54);
+}
+
+.about-me h5{
+    line-height: 1.8;
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.elephant{
+    width: 30%;
+    margin: auto;
+}
+
+.elephant img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* ===== About Me - End ===== */
+
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1630px){
+    /* ===== Intro - Start ===== */
+    .introduction .hello h1{
+        font-size: 150px;
+    }
+
+    .introduction .hello h3{
+        font-size: 70px;
+    }
+    /* ===== Intro - Start ===== */
+
+    /* ===== About Me - Start ===== */
+    .about-me h1{
+        font-size: 110px;
+    }
+    
+    .about-me h5{
+        font-size: 40px;
+    }
+    /* ===== About Me - End ===== */
+}
+
+/* ============================================================ */
+
+@media (max-width: 1240px){
+    
+    /* ===== Intro - Start ===== */
+    .introduction .hello h1{
+        font-size: 130px;
+    }
+
+    .introduction .hello h3{
+        font-size: 60px;
+    }
+
+    .introduction .hello h4{
+        font-size: 45px;
+    }
+
+    .introduction .hello h5{
+        font-size: 30px;
+    }
+    /* ===== Intro - End ===== */
+
+    /* ===== About Me - Start ===== */
+    .about-me h1{
+        font-size: 90px;
+    }
+
+    .about-me h5{
+        font-size: 30px;
+    }
+
+    /* ===== About Me - End ===== */
+}
+
+/* ============================================================ */
+
+@media (max-width: 1055px){
+    /* ===== Intro - Start ===== */
+    .introduction .hello h1{
+        font-size: 100px;
+    }
+
+    .introduction .hello h3{
+        font-size: 50px;
+    }
+
+    .introduction .hello h4{
+        font-size: 40px;
+    }
+
+    .introduction .hello h5{
+        font-size: 25px;
+    }
+    /* ===== Intro - End ===== */
+
+    /* ===== About Me - Start ===== */
+    .about-me h1{
+        font-size: 85px;
+    }
+
+    .about-me h5{
+        font-size: 25px;
+    }
+    /* ===== About Me - End ===== */
+}
+
+/* ============================================================ */
+
+@media (max-width: 815px){
+    /* ===== Intro - Start ===== */
+    .introduction .hello h1{
+        font-size: 90px;
+    }
+
+    .introduction .hello h3{
+        font-size: 45px;
+    }
+
+    .introduction .hello h4{
+        font-size: 35px;
+    }
+
+    .introduction .hello h5{
+        font-size: 20px;
+    }
+    /* ===== Intro - End ===== */
+
+    /* ===== About Me - Start ===== */
+    .about-me h1{
+        font-size: 80px;
+    }
+
+    .about-me h5{
+        font-size: 20px;
+    }
+    /* ===== About Me - End ===== */
+}
+
+/* ============================================================ */
+
+@media (max-width: 730px){
+    /* ===== Intro - Start ===== */
+    .introduction .hello h1{
+        font-size: 70px;
+    }
+
+    .introduction .hello h3{
+        font-size: 35px;
+    }
+
+    .introduction .hello h4{
+        font-size: 30px;
+    }
+
+    .introduction .hello h5{
+        font-size: 20px;
+    }
+    /* ===== Intro - End ===== */
+
+    /* ===== About Me - Start ===== */
+    .about-me h1{
+        font-size: 70px;
+    }
+
+    .about-me h5{
+        font-size: 15px;
+    }
+    /* ===== About Me - End ===== */
+}
+
+/* ============================================================ */
+
+@media (max-width: 600px){
+
+    /* ===== Nav Bar - Start ===== */
     .hideOnMobile{
         display: none;
     }
@@ -106,129 +403,98 @@ nav ul .nav-top .x-button a{
     .menu-button{
         display: block;
     }
-}
+    /* ===== Nav Bar - End ===== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .nav-bar {
-    width: 100%;
-    display: flex;
-    Justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    position: relative;
-    background-color: pink;
-    padding: 12px 20px;
-}
-
-.logo img {
-
-}
-
-.menu {
-    display: flex;
-}
-
-.menu li {
-    padding-left: 30px;
-}
-
-.menu li a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    transition: 0.15s ease-in-out;
-    position: relative;
-}
-
-.menu li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: white;
-}
-
-.menu li a:hover {
-    color: black;
-}
-
-.open-menu, .close-menu {
-    position: absolute;
-    color: black;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: none;
-}
-
-.open-menu {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-.close-menu {
-    top: 20px;
-    right: 20px;
-}
-
-#check{
-    display: none;
-}
-
-
-
-
-
-
-===== RESPONSIVENESS =====
-
-@media (max-width: 610px){
-    .menu{
+    /* ===== Intro - Start ===== */
+    .introduction{
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background-color: brown;
-        transition: all 0.2s ease-in-out;
     }
 
-    .menu li {
-        margin-top: 40px;
+    .introduction .intro-image{
+        margin: auto;
     }
 
-    .menu li a {
-        padding: 10px;
+    .introduction .hello{
+        max-width: 70%;
+        text-align: center;
     }
 
-    .open-menu, .close-menu {
-        display: block;
+    /* ===== Intro - End ===== */
+}
+
+/* ============================================================ */
+
+@media (max-width: 450px){
+    /* ===== Intro - Start ===== */
+    .introduction .hello h1{
+        font-size: 60px;
     }
 
-    #check:checked ~ .menu {
-        right: 0;
+    .introduction .hello h3{
+        font-size: 30px;
     }
-}  */
+
+    .introduction .hello h4{
+        font-size: 25px;
+    }
+
+    .introduction .hello h5{
+        font-size: 15px;
+    }
+    /* ===== Intro - End ===== */
+
+    /* ===== About Me - Start ===== */
+    .about-me h1{
+        font-size: 60px;
+    }
+
+    .about-me h5{
+        font-size: 15px;
+    }
+    /* ===== About Me - End ===== */
+}
+
+/* ============================================================ */
+
+@media (max-width: 350px){
+    /* ===== Intro - Start ===== */
+    .introduction .hello h1{
+        font-size: 50px;
+    }
+
+    .introduction .hello h3{
+        font-size: 30px;
+    }
+
+    .introduction .hello h4{
+        font-size: 25px;
+    }
+
+    .introduction .hello h5{
+        font-size: 15px;
+    }
+    /* ===== Intro - End ===== */
+
+    /* ===== About Me - Start ===== */
+    .about-me h1{
+        font-size: 50px;
+    }
+
+    .about-me h5{
+        font-size: 15px;
+    }
+    /* ===== About Me - End ===== */
+}
+
+/* ============================================================ */
+
+
+
+
+
+
+
+
+
+
+
