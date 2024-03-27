@@ -237,7 +237,123 @@ nav ul .nav-top .x-button a{
 
 
 
-/* ===== RESPONSIVE ===== */
+/* ===== Contact Us - Start===== */
+.contact-me{
+    font-family: "Knewave", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 200px;
+    color: white;
+    text-align: center;
+}
+
+.contact-me h1 {
+    padding: 20px 0px;
+    font-size: 90px;
+}
+
+.contact-me h3 {
+    padding: 20px 0px;
+    font-size: 50px;
+}
+
+.contact-details{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: white;
+    display: flex;
+    margin: auto;
+    padding: 50px 40px;
+}
+
+.contact-details .info{
+    margin: 0px 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details .info .details{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details .info .details h3{
+    font-size: 60px;
+}
+
+.contact-details .info .details p{
+    font-size: 30px;
+}
+
+.contact-details .info .details p i{
+    padding-right: 25px;
+}
+
+.contact-details .info .elenchick{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-details .info .elenchick img{
+    padding-top: 40px;
+    height: auto;
+    width: 100%;
+}
+
+.contact-details .contact{
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 30px;
+    width: 50%;
+}
+
+.contact-details .contact textarea{
+    height: 250px;
+    border-radius: 15px;
+    padding-top: 5px;
+}
+
+.contact-details .contact h3{
+    font-size: 60px;
+}
+
+.contact-input{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border: none;
+    background-color: rgb(225, 225, 225);
+    border-radius: 15px;
+    font-size: 30px;
+    padding-left: 20px;
+    height: 60px;
+    width: 90%;
+}
+
+.contact-details .contact button{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border: none;
+    font-size: 30px;
+    background-color: rgb(225, 225, 225);
+    height: 70px;
+    width: 150px;
+    border-radius: 50px;
+}
+
+
+/* ===== Contact Us - End ===== */
+
+/* =============== RESPONSIVE =============== */
 
 @media (max-width: 1630px){
     /* ===== Intro - Start ===== */
