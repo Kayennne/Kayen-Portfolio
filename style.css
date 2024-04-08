@@ -454,18 +454,123 @@ nav ul .nav-top .x-button a{
 
 /* ===== Project - Start ===== */
 
+.back-btn{
+    margin: 20px 40px;
+}
+
+.back-btn a{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+}
+
+.back-btn a:hover{
+    color: #DB8D8D;
+}
+
 .title {
-    font-family: "Knewave", system-ui;
-    font-weight: 400;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
     font-style: normal;
     align-items: center;
     text-align: center;
     font-size: 50px;
     margin-top: 50px;
+    color: white;
 }
 
-/* ===== Project - Start ===== */
+.proj-details h3, .overview h2, .overview p, .background h2, .background p, .gallery .photo-heading h2{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.proj-details{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: small;
+}
+
+.proj-details .short-details{
+    padding: 0px 10px
+}
+
+.overview{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 2;
+}
+
+.o-text{
+    width: 50%;
+    font-size: small;
+}
+
+.line{
+    background-color: white;
+}
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+    /* border: 2px solid rgb(81, 81, 81); */
+}
+
+.background{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    line-height: 2;
+}
+
+.b-text{
+    width: 50%;
+    font-size: small;
+}
+
+
+/* ===== Project - End ===== */
+
+
+/* ===== Photo - Start ===== */
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.gallery .photobox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gallery .photobox .set{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.gallery .photobox .set img{
+    width: 100%;
+    padding: 7px 0px;
+}
+
+/* ===== Photo - End ===== */
 
 
 /* ===== Carousel - Start ===== */
@@ -476,7 +581,6 @@ nav ul .nav-top .x-button a{
     height: 550px;
     margin: auto;
     position: relative;
-    overflow: hidden;
 }
 
 .list{
@@ -494,6 +598,24 @@ nav ul .nav-top .x-button a{
     max-width: 100vw;
     height: 100%;
     object-fit: cover;
+}
+
+.buttons{
+    position: absolute;
+    top:45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.341);
+    color: white;
+    border: none;
 }
 
 .dots{
@@ -534,7 +656,10 @@ nav ul .nav-top .x-button a{
 
 .slider{
     display: flex;
-    aspect-ratio: 16/9;
+    /* aspect-ratio: 16/9; */
+    width: 1150px;
+    height: 650px;
+    margin: auto;
     overflow-x: auto;
     overflow: hidden;
     scroll-snap-type: x mandatory;
@@ -566,7 +691,7 @@ nav ul .nav-top .x-button a{
     height: 0.5rem;
     border-radius: 50%;
     background-color: white;
-    opacity: 0.75;
+    opacity: 0.5;
     transition: opacity ease 250ms;
 }
 
@@ -642,6 +767,15 @@ nav ul .nav-top .x-button a{
     }
 
     /* ===== About Me - End ===== */
+
+    /* ===== Carousel - Start ===== */
+
+    .slider{
+        width: 950px;
+        height: 550px;
+    }
+
+    /* ===== Carousel - End ===== */
 }
 
 /* ============================================================ */
@@ -700,6 +834,15 @@ nav ul .nav-top .x-button a{
     /* ===== Projects - Start ===== */
 
     /* ===== Projects - End ===== */
+
+    /* ===== Carousel - Start ===== */
+
+    .slider{
+        width: 750px;
+        height: 400px;
+    }
+
+    /* ===== Carousel - End ===== */
 }
 
 /* ============================================================ */
@@ -744,6 +887,27 @@ nav ul .nav-top .x-button a{
     }
 
     /* ===== Contact Us - End ===== */
+
+    /* ===== Carousel - Start ===== */
+
+    .slider{
+        width: 650px;
+        height: 350px;
+    }
+
+    /* ===== Carousel - End ===== */
+
+    /* ===== Photo Gallery - Start ===== */
+
+    .gallery .photobox{
+        flex-direction: column;
+    }
+
+    .gallery .photobox .set{
+        width: 100%;
+    }
+
+    /* ===== Photo Gallery - End ===== */
 }
 
 /* ============================================================ */
@@ -776,6 +940,15 @@ nav ul .nav-top .x-button a{
         font-size: 15px;
     }
     /* ===== About Me - End ===== */
+
+    /* ===== Carousel - Start ===== */
+
+    .slider{
+        width: 540px;
+        height: 300px;
+    }
+
+    /* ===== Carousel - End ===== */
 }
 
 /* ============================================================ */
@@ -826,6 +999,15 @@ nav ul .nav-top .x-button a{
     }
     /* ===== Projects - End ===== */
 
+    /* ===== Carousel - Start ===== */
+
+    .slider{
+        width: 430px;
+        height: 240px;
+    }
+
+    /* ===== Carousel - End ===== */
+
 }
 
 /* ============================================================ */
@@ -874,6 +1056,13 @@ nav ul .nav-top .x-button a{
     }
 
     /* ===== Contact Us - End ===== */
+
+    .slider{
+        width: 330px;
+        height: 190px;
+    }
+
+    /* ===== Carousel - End ===== */
 }
 
 /* ============================================================ */
@@ -928,6 +1117,15 @@ nav ul .nav-top .x-button a{
     }
 
     /* ===== Contact Us - End ===== */
+
+    /* ===== Contact Us - End ===== */
+
+    .slider{
+        width: 250px;
+        height: 150px;
+    }
+
+    /* ===== Carousel - End ===== */
 }
 
 /* ============================================================ */
