@@ -983,6 +983,22 @@ hr{
     }
 
     /* ===== Carousel - End ===== */
+
+    /* ===== Projects - Start ===== */
+    .vid-showcase{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vid-showcase video{
+        width: 80%;
+    }
+    .vid-showcase iframe{
+        width: 80%;
+        min-height: 280px;
+    }
+
+    /* ===== Projects - End ===== */
 }
 
 /* ============================================================ */
@@ -1103,7 +1119,10 @@ hr{
     .proj-details{
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+
+    .proj-details .short-details{
+        margin: 5px;
     }
 
     .overview{
@@ -1122,14 +1141,7 @@ hr{
         width: 80%;
     }
 
-    .vid-showcase{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .vid-showcase video{
-        width: 80%;
-    }
+    
 
     /* ===== Projects - End ===== */
 }
