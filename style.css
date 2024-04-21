@@ -255,10 +255,10 @@ nav ul .nav-top .x-button a{
     flex-wrap: wrap;
 }
 
-.vid-showcase video{
+.vid-showcase video,.vid-showcase iframe {
     width: 40%;
     border-radius: 20px;
-    padding: 10px;
+    margin: 10px;
 }
 
 .projects .text{
