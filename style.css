@@ -281,7 +281,8 @@ nav ul .nav-top .x-button a{
     flex-direction: column;
     align-items: center;
     font-size: xxx-large;
-    padding: 10px 0px;
+    padding: 10px 15px;
+    text-align: center;
 }
 
 .projects .flex-projects{
@@ -548,6 +549,10 @@ nav ul .nav-top .x-button a{
     justify-content: space-around;
     align-items: center;
     line-height: 2;
+}
+
+.o-title{
+    text-align: center;
 }
 
 .o-text{
