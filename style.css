@@ -261,9 +261,15 @@ nav ul .nav-top .x-button a{
     margin: 10px;
 }
 
+
 .vid-showcase .single-vid{
     width: 60%;
     height: 500px;
+}
+
+.vid-showcase .double-vid{
+    width: 40%;
+    height: 300px;
 }
 
 .projects .text{
@@ -574,6 +580,9 @@ hr{
     font-size: small;
 }
 
+.here-links a{
+    color: black;
+}
 
 /* ===== Project - End ===== */
 
@@ -1003,9 +1012,9 @@ hr{
         min-height: 280px;
     }
 
-    .vid-showcase .single-vid{
+    .vid-showcase .single-vid, .vid-showcase .double-vid{
         width: 80%;
-        height: 280px;
+        height: 300px;
     }
 
     /* ===== Projects - End ===== */
@@ -1067,6 +1076,14 @@ hr{
     }
 
     /* ===== Carousel - End ===== */
+
+    /* ===== Gallery - Start ===== */
+
+    .projects .flex-projects button {
+        width: auto;
+    }
+
+    /* ===== Gallery - End ===== */
 
 }
 
