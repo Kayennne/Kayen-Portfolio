@@ -725,7 +725,7 @@ hr{
     /* flex-grow - every img same size
     flex-shrink - retain width it needs and not wrap content
     flex-basis - all img have initial size of 100% */
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     object-fit: cover;
 }
 
