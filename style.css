@@ -272,6 +272,10 @@ nav ul .nav-top .x-button a{
     height: 300px;
 }
 
+.projects{
+    padding-bottom: 15px;
+}
+
 .projects .text{
     font-family: "Amatic SC", sans-serif;
     font-weight: 400;
