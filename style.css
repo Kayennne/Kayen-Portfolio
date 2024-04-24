@@ -760,6 +760,72 @@ hr{
 /* ===== Carousel - End ===== */
 
 
+/* ===== Life -Start ===== */
+
+.y2024{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+}
+
+.life-intro{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.year-heading{
+    text-align: center;
+}
+
+.year-heading h1{
+    font-size: 50px;
+}
+
+.year-underline{
+    height: 2px;
+    width: 20px;
+    color: black;
+    background-color: black;
+}
+
+.event{
+    display: flex;
+    margin: 20px 30px;
+    align-items: center;
+}
+
+.event .event-info{
+    width: 50%;
+    padding: 0px 10px;
+    text-align: left;
+}
+
+.event .event-pic{
+    width: 50%;
+    align-content: center;
+    padding: 0px 10px;
+}
+
+.event .event-pic img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ===== Life -End ===== */
+
+
+
+
+
+
 
 
 
@@ -1094,6 +1160,26 @@ hr{
 
     /* ===== Gallery - End ===== */
 
+
+    /* ===== Life - Start ===== */
+    .event{
+        flex-direction: column;
+        margin: 15px 20px;
+    }
+
+    .event .event-info{
+        width: 90%;
+        text-align: center;
+    }
+
+    .event .event-pic{
+        padding-top: 15px;
+        width: 90%;
+    }
+
+    
+
+    /* ===== Life - End ===== */
 }
 
 /* ============================================================ */
